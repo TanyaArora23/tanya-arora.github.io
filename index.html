@@ -5,119 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tanya Arora | Robotics Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content container">
-      <div class="hero-text">
-        <h1>Hi, I'm <span class="highlight">Tanya Arora</span></h1>
-        <p>Robotics Enthusiast | Graduate Researcher @ UC San Diego</p>
-        <a class="cta-button" href="#contact">Contact Me</a>
+  <section class="landing">
+    <div class="content">
+      <div class="text">
+        <h1>Hi, I'm <span>Tanya Arora</span></h1>
+        <p>Robotics Enthusiast & Graduate Researcher at UC San Diego</p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact</a>
+        </div>
       </div>
-      <div class="hero-image">
-        <img src="profile.jpg" alt="Tanya Arora" class="profile-pic" />
-        <div class="social-icons">
-          <a href="https://linkedin.com/in/tanyaarora23" target="_blank">LinkedIn</a>
-          <a href="mailto:taarora@ucsd.edu">Email</a>
-          <a href="https://github.com/tanya-arora" target="_blank">GitHub</a>
+      <div class="image">
+        <img src="profile.jpg" alt="Profile Photo" />
+        <div class="socials">
+          <a href="https://github.com/tanya-arora" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/tanyaarora23" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:taarora@ucsd.edu"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </div>
-  </header>
-
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      Motivated and detail-oriented Mechanical Engineering graduate student specializing in Robotics, with 2.5 years of professional experience in Research & Development. I’m passionate about building intelligent robotic systems that interact seamlessly with the real world. From developing drone control pipelines to optimizing multi-agent navigation, I enjoy solving engineering challenges with a blend of theory and hands-on implementation.
-    </p>
   </section>
 
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Cyclic Pursuit with Crazyflie Robots</h3>
-      <p>Developed a multi-agent Cyclic Pursuit strategy using Crazyflie drones and ROS 2. Synchronized drone states and implemented velocity control using Crazyswarm2 + CrazySim in Gazebo.</p>
-    </div>
-    <div class="project">
-      <h3>Object Avoidance with Turtlebot4</h3>
-      <p>Contributed to an autonomous exploration system using a fleet of Turtlebot4 robots in unknown environments, leveraging odometry and collision avoidance strategies.</p>
-    </div>
-    <div class="project">
-      <h3>RB5 Robot Navigation Pipeline</h3>
-      <p>Designed a full perception-localization-mapping-control pipeline for Qualcomm RB5 robots to navigate arenas using AprilTags and path optimization techniques.</p>
-    </div>
-    <div class="project">
-      <h3>Orientation Estimation from IMU</h3>
-      <p>Implemented a projected gradient descent algorithm using IMU data to estimate 3D orientation and generate panoramic images from camera data.</p>
-    </div>
-    <div class="project">
-      <h3>SLAM Comparison Study</h3>
-      <p>Performed comparative analysis of SLAM using encoder/IMU data vs. Lidar-based ICP, evaluating performance and map accuracy.</p>
-    </div>
-  </section>
+  <main class="sections">
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cyclic Pursuit with Crazyflie Robots</h3>
+          <p>Multi-agent control in simulation using ROS 2, Gazebo, and Crazyswarm2.</p>
+        </div>
+        <div class="card">
+          <h3>Object Avoidance with Turtlebot4</h3>
+          <p>Autonomous multi-robot exploration in unknown environments using odometry and PID control.</p>
+        </div>
+        <div class="card">
+          <h3>RB5 Robot Navigation</h3>
+          <p>Built a full pipeline with localization, mapping, planning and control using AprilTags.</p>
+        </div>
+        <div class="card">
+          <h3>IMU Orientation Estimation</h3>
+          <p>Implemented quaternion optimization using gradient descent to track 3D orientation from IMU data.</p>
+        </div>
+        <div class="card">
+          <h3>SLAM Comparison Study</h3>
+          <p>Evaluated encoder-IMU vs Lidar-based SLAM using the ICP algorithm for map accuracy.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Graduate Student Researcher — Multi-Agent Robotics Lab</h3>
-      <p>UC San Diego | July 2024 – Present</p>
-      <ul>
-        <li>Developing object avoidance and navigation systems for Turtlebot4 robots in multi-agent settings.</li>
-        <li>Implemented PID controller using odometry data.</li>
-        <li>Mentored undergrads on setup and troubleshooting.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Assistant Manager, R&D — Escorts Kubota Limited</h3>
-      <p>Faridabad, India | Dec 2020 – June 2022</p>
-      <ul>
-        <li>Co-developed brake systems for Indian Railways including AAR Bogie Mounted Systems and Smart Coach components.</li>
-        <li>Contributed to IRIS Audit documentation and NPD efforts.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Graduate Engineer Trainee — Escorts Kubota Limited</h3>
-      <p>Faridabad, India | Dec 2019 – Nov 2020</p>
-      <ul>
-        <li>Hands-on training in 3D modeling (PTC Creo), Railway Brake Systems, and PLM using Siemens Teamcenter.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Graduate Researcher @ UC San Diego</h3>
+          <p>July 2024 – Present</p>
+          <ul>
+            <li>Worked on navigation & object avoidance in multi-robot systems.</li>
+            <li>Mentored undergraduates in system setup and debugging.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Assistant Manager – R&D, Escorts Kubota</h3>
+          <p>Dec 2020 – June 2022</p>
+          <ul>
+            <li>Worked on Indian Railways brake systems and Smart Coach components.</li>
+            <li>Supported IRIS audit compliance and NPD lifecycle.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Graduate Engineer Trainee, Escorts Kubota</h3>
+          <p>Dec 2019 – Nov 2020</p>
+          <ul>
+            <li>Training in Creo CAD, railway systems, and PLM using Siemens Teamcenter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section id="education" class="container">
-    <h2>Education</h2>
-    <div class="education">
-      <h3>University of California, San Diego</h3>
-      <p>MS in Mechanical Engineering (Controls & Robotics) | Sep 2023 – Dec 2025</p>
-    </div>
-    <div class="education">
-      <h3>Delhi Technological University</h3>
-      <p>B.Tech in Production & Industrial Engineering | Aug 2015 – June 2019</p>
-    </div>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>UC San Diego</h3>
+          <p>MS Mechanical Engineering – Controls & Robotics<br>2023 – 2025</p>
+        </div>
+        <div class="card">
+          <h3>Delhi Technological University</h3>
+          <p>B.Tech in Production & Industrial Engineering<br>2015 – 2019</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:taarora@ucsd.edu">taarora@ucsd.edu</a></p>
-    <p><strong>Phone:</strong> +1 (858) 752-4056</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tanyaarora23">tanyaarora23</a></p>
-    <p><strong>Location:</strong> San Diego, CA</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:taarora@ucsd.edu">taarora@ucsd.edu</a></p>
+        <p><strong>Phone:</strong> +1 (858) 752-4056</p>
+        <p><strong>Location:</strong> San Diego, CA</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Tanya Arora. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Tanya Arora. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
