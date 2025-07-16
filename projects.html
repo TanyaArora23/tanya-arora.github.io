@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details - Tanya Arora</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (location.hash) {
+        const target = document.querySelector(location.hash);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Project Details</h1>
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </header>
+
+  <section id="cyclic-pursuit" class="project container">
+    <h2>Cyclic Pursuit with Crazyflie Robots</h2>
+    <p>Developed a velocity-based cyclic pursuit controller for multi-agent coordination using Crazyflie drones. Implemented synchronization via ROS 2 and simulated in Gazebo using Crazyswarm2 and CrazySim.</p>
+    <ul>
+      <li>Multi-agent coordination</li>
+      <li>ROS 2 velocity control</li>
+      <li>Gazebo + CrazySim simulation</li>
+    </ul>
+  </section>
+
+  <section id="turtlebot" class="project container">
+    <h2>Object Avoidance with Turtlebot4</h2>
+    <p>Designed and tested an autonomous exploration strategy using multiple Turtlebot4 robots with odometry-based localization and real-time collision avoidance.</p>
+    <ul>
+      <li>Odometry navigation</li>
+      <li>Obstacle detection and avoidance</li>
+      <li>Multi-robot exploration</li>
+    </ul>
+  </section>
+
+  <section id="rb5" class="project container">
+    <h2>RB5 Robot Navigation Pipeline</h2>
+    <p>Built a modular navigation pipeline for Qualcomm RB5 robots incorporating AprilTag detection, trajectory planning, and map-aware localization.</p>
+    <ul>
+      <li>AprilTag-based localization</li>
+      <li>Path planning and optimization</li>
+      <li>System integration on RB5</li>
+    </ul>
+  </section>
+
+  <section id="orientation" class="project container">
+    <h2>Orientation Estimation from IMU</h2>
+    <p>Estimated 3D orientation trajectories from IMU data using projected gradient descent on unit quaternions. Generated panoramic views from camera images aligned using estimated orientations.</p>
+    <ul>
+      <li>IMU calibration and filtering</li>
+      <li>Quaternion-based optimization (JAX)</li>
+      <li>Panoramic image generation</li>
+    </ul>
+  </section>
+
+  <section id="slam" class="project container">
+    <h2>SLAM Comparison Study</h2>
+    <p>Conducted a comparative evaluation between odometry-based and Lidar-ICP based SLAM algorithms in terms of accuracy and robustness.</p>
+    <ul>
+      <li>SLAM pipeline benchmarking</li>
+      <li>ICP vs Odometry error analysis</li>
+      <li>Map quality evaluation</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tanya Arora. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
