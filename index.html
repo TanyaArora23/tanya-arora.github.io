@@ -44,25 +44,46 @@
 
   <section id="projects" class="container">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Cyclic Pursuit with Crazyflie Robots</h3>
-      <p>Developed a multi-agent Cyclic Pursuit strategy using Crazyflie drones and ROS 2. Synchronized drone states and implemented velocity control using Crazyswarm2 + CrazySim in Gazebo.</p>
-    </div>
-    <div class="project">
-      <h3>Object Avoidance with Turtlebot4</h3>
-      <p>Contributed to an autonomous exploration system using a fleet of Turtlebot4 robots in unknown environments, leveraging odometry and collision avoidance strategies.</p>
-    </div>
-    <div class="project">
-      <h3>RB5 Robot Navigation Pipeline</h3>
-      <p>Designed a full perception-localization-mapping-control pipeline for Qualcomm RB5 robots to navigate arenas using AprilTags and path optimization techniques.</p>
-    </div>
-    <div class="project">
-      <h3>Orientation Estimation from IMU</h3>
-      <p>Implemented a projected gradient descent algorithm using IMU data to estimate 3D orientation and generate panoramic images from camera data.</p>
-    </div>
-    <div class="project">
-      <h3>SLAM Comparison Study</h3>
-      <p>Performed comparative analysis of SLAM using encoder/IMU data vs. Lidar-based ICP, evaluating performance and map accuracy.</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <a href="projects.html#cyclic-pursuit">
+          <img src="images/cyclic.jpg" alt="Cyclic Pursuit" onerror="this.onerror=null; this.src='profile.jpg';">
+          <h3>Cyclic Pursuit with Crazyflie Robots</h3>
+          <p>ROS 2 · Gazebo · Velocity Control</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects.html#turtlebot">
+          <img src="images/turtlebot.jpg" alt="Turtlebot" onerror="this.onerror=null; this.src='profile.jpg';">
+          <h3>Object Avoidance with Turtlebot4</h3>
+          <p>Odometry · Collision Avoidance · Multi-agent</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects.html#rb5">
+          <img src="images/rb5.jpg" alt="RB5" onerror="this.onerror=null; this.src='profile.jpg';">
+          <h3>RB5 Robot Navigation Pipeline</h3>
+          <p>AprilTags · Mapping · Control Pipeline</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects.html#orientation">
+          <img src="images/orientation.jpg" alt="Orientation" onerror="this.onerror=null; this.src='profile.jpg';">
+          <h3>Orientation Estimation from IMU</h3>
+          <p>IMU · JAX · Quaternion Optimization</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects.html#slam">
+          <img src="images/slam.jpg" alt="SLAM" onerror="this.onerror=null; this.src='profile.jpg';">
+          <h3>SLAM Comparison Study</h3>
+          <p>Lidar ICP · Odometry · Accuracy Analysis</p>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -121,3 +142,4 @@
   </footer>
 </body>
 </html>
+
